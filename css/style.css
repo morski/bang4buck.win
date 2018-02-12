@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/bg.jpg") no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'clBoldItalic';
+    src: url('../fonts/Champagne & Limousines Bold Italic.ttf'); 
+}
+
+@font-face {
+    font-family: 'clBold';
+    src: url('../fonts/Champagne & Limousines Bold.ttf'); 
+}
+
+@font-face {
+    font-family: 'clItalic';
+    src: url('../fonts/Champagne & Limousines Italic.ttf'); 
+}
+
+@font-face {
+    font-family: 'cl';
+    src: url('../fonts/Champagne & Limousines.ttf');
+}
+
+@font-face {
+    font-family: 'neo';
+    src: url('../fonts/neo.ttf');
+}
+
+@font-face {
+    font-family: 'neoBold';
+    src: url('../fonts/neoBold.ttf');
+}
+
+@font-face {
+    font-family: 'op';
+    src: url('../fonts/op.ttf');
+}
+
+@font-face {
+    font-family: 'opb';
+    src: url('../fonts/opb.ttf');
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: ivory;
+    font-family: opb;
+}
+
+.drinkTitle {
+    height: 50px;
+    text-align: center;
+    font-family: opb;
+    font-size: 35px;
+    background: #333;
+    color: ivory;
+}
+
+.drinkContainer {
+    background: inherit;
+    overflow: hidden;
+    border-radius: 3px;
+    margin: 20px;
+    box-sizing: border-box;
+    position: relative;
+    color: #88A09E;
+}
+
+.drinkContainer label {
+    font-size: 20px;
+}
+
+  .formContainer { 
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #EFF1ED;
+  }
+
+  .form-group {
+      font-family: opb;
+  }
