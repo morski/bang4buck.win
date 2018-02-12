@@ -9,6 +9,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: lgc;
 }
 
 @font-face {
@@ -51,18 +52,32 @@ body {
     src: url('../fonts/opb.ttf');
 }
 
+@font-face {
+    font-family: 'lgc';
+    src: url('../fonts/Louis George Cafe.ttf');
+}
+
+
+
+.navbar {
+    font-family: lgc;
+}
+
 .title {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
     color: ivory;
-    font-family: opb;
+    height:50px;
+}
+
+.main {
+    height: calc(100vh - 50px);
 }
 
 .drinkTitle {
     height: 50px;
     text-align: center;
-    font-family: opb;
     font-size: 35px;
     background: #333;
     color: ivory;
@@ -86,8 +101,4 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     background: #EFF1ED;
-  }
-
-  .form-group {
-      font-family: opb;
   }

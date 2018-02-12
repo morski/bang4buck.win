@@ -17,7 +17,7 @@ file.on('finish', function(){
     delete_row(worksheet, 1);
     delete_row(worksheet, 0);
     //Create JSON of excel file. Use current first row as keys
-    var alkoJson = xlsx.utils.sheet_to_json(worksheet);
+    var alkoJson = xlsx.utils.sheet_to_json(worksheet,{defval:""});
 
     //Save json to file
     var jString = JSON.stringify(alkoJson);
