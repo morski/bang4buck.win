@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  mor.ski:
+    image: bang4buck:latest
+    container_name: bang4buck
+    ports:
+      - "19999:80"

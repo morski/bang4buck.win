@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Foundation Starter Template</title>
+    <link rel="stylesheet" href="css/reset.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">  
+  </head>
+  <body>
+    <div class="grid-container">
+        <div class="grid-x show-for-large">
+            <div class="cell header">BANG 4 BUCK . WIN</div>
+        </div>
+        <div class="grid-x grid-margin-x drink-container">
+            <div class="cell auto drink" id="1">
+                <div class="input-group volume">
+                    <div class="input-group-label"><img src="images/color-icon.svg" alt=""></div>
+                    <input class="input-group-field" type="number" placeholder="Volume">
+                </div>
+                <div class="input-group alcohol">
+                    <div class="input-group-label"><img src="images/abv-icon.svg" alt=""></div>
+                    <input class="input-group-field" type="number" placeholder="ABV">
+                </div>
+                <div class="input-group price">
+                    <div class="input-group-label"><img src="images/dollar-icon.svg" alt=""></div>
+                    <input class="input-group-field" type="number" placeholder="Price">
+                </div>
+            </div>
+            <div class="cell auto drink" id="2">
+                <div class="input-group volume">
+                    <div class="input-group-label"><img src="images/color-icon.svg" alt=""></div>
+                    <input class="input-group-field" type="number" placeholder="Volume">
+                </div>
+                <div class="input-group alcohol">
+                    <div class="input-group-label"><img src="images/abv-icon.svg" alt=""></div>
+                    <input class="input-group-field" type="number" placeholder="ABV">
+                </div>
+                <div class="input-group price">
+                    <div class="input-group-label"><img src="images/dollar-icon.svg" alt=""></div>
+                    <input class="input-group-field" type="number" placeholder="Price">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="scripts/height.js"></script>
+    <script src="scripts/drinkCalculator.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
