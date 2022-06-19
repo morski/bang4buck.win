@@ -1,8 +1,11 @@
 version: '3'
 
 services:
-  mor.ski:
+  bang4buck:
     image: bang4buck:latest
     container_name: bang4buck
     ports:
       - "19999:80"
+    labels:
+      - "net.unraid.docker.managed=dockerman"
+      - "net.unraid.docker.icon=/mnt/user/appdata/homer/assets/tools/mwlogo.png"
