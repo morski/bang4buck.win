@@ -28,7 +28,7 @@ pipeline {
           // Build the image
           withCredentials([usernamePassword(credentialsId: 'Github', usernameVariable: 'GITHUB_USERNAME', passwordVariable: 'GITHUB_PASSWORD')]) {
               def repoURL = """
-                https://portainer.local.mor.ski/api/endpoints/2/docker/build?t=bang4buck:latest&remote=https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/$GITHUB_USERNAME/bang4buck.git&dockerfile=Dockerfile&nocache=true
+                https://portainer.local.mor.ski/api/endpoints/2/docker/build?t=bang4buck:latest&remote=https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/$GITHUB_USERNAME/bang4buck.win.git&dockerfile=Dockerfile&nocache=true
               """
               def imageResponse = httpRequest httpMode: 'POST', ignoreSslErrors: true, url: repoURL, validResponseCodes: '200', customHeaders:[[name:"Authorization", value: env.JWTTOKEN ], [name: "cache-control", value: "no-cache"]]
           }
@@ -74,7 +74,7 @@ pipeline {
           // Generate JSON for when the stack is created
           withCredentials([usernamePassword(credentialsId: 'Github', usernameVariable: 'GITHUB_USERNAME', passwordVariable: 'GITHUB_PASSWORD')]) {
             createStackJson = """
-              {"Name": "bang4buck", "RepositoryURL": "https://github.com/$GITHUB_USERNAME/bang4buck", "ComposeFilePathInRepository": "docker-compose.yml", "RepositoryAuthentication": true, "RepositoryUsername": "$GITHUB_USERNAME", "RepositoryPassword": "$GITHUB_PASSWORD"}
+              {"Name": "bang4buck", "RepositoryURL": "https://github.com/$GITHUB_USERNAME/bang4buck.win", "ComposeFilePathInRepository": "docker-compose.yml", "RepositoryAuthentication": true, "RepositoryUsername": "$GITHUB_USERNAME", "RepositoryPassword": "$GITHUB_PASSWORD"}
             """
           }
 
